@@ -1,5 +1,5 @@
 ﻿string? insertNumber = Console.ReadLine();
-if(insertNumber!= null);
+if(insertNumber!= null)
 {
 int num = int.Parse(insertNumber);
 int a = 2;
