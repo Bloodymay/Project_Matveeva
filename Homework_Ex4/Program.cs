@@ -7,20 +7,13 @@ if (firstNumber != null && secondNumber != null && thirdNumber != null);
     int num2 = int.Parse(secondNumber);
     int num3 = int.Parse(thirdNumber);
    
+    int max = num1;
+    if (num2>max) max = num2;
     
-    if (num1>num2)
-    
-    {
-        Console.WriteLine(num1);
-    }
        
-    if (num2 > num3)
+    if (num3>max) max = num3;
 
-    {
-        Console.WriteLine(num2);
-    }
-    else
-    {
-        Console.WriteLine(num3);
-    }
+    Console.WriteLine(max);
+    
 } 
+
