@@ -1,17 +1,20 @@
 ﻿string? insertNumber = Console.ReadLine();
-if(insertNumber!= null)
+if(insertNumber!= null);
 {
 int num = int.Parse(insertNumber);
 int a = 2;
-int outputNum = 0;
-while (a <= num);
+string outputNum  = string.Empty;
+while (a <= num)
 {
-
-    outputNum = outputNum + a;
-    a = a+2;
-
+  
+   
+     outputNum = outputNum + a;
+     a = a+2;
 }
-Console.WriteLine(outputNum);
-}   
+   
+Console.WriteLine( outputNum );
+}
+
+   
 
 
