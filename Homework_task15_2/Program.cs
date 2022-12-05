@@ -1,5 +1,5 @@
-﻿int insertNum = int.Parse(Console.ReadLine()??"0");
-var daysOfWeek = new Dictionary<int,string>
+﻿int insertNum = int.Parse(Console.ReadLine()??"0");//Парсим введенное число
+var daysOfWeek = new Dictionary<int,string>//Заполняем словарь
 {
     { 1, "Понедельник,рабочий"},
     { 2, "Вторник,рабочий"},
@@ -9,12 +9,12 @@ var daysOfWeek = new Dictionary<int,string>
     { 6, "Суббота,выходной"},
     { 7, "Воскресенье,выходной"},
 };
-if ((insertNum>0) && (insertNum<8))
+if((insertNum>0)&&(insertNum<8))// Проводим проверку на соответствие введенного числа дню недели
 {
-    Console.WriteLine (daysOfWeek[insertNum]);
+    Console.WriteLine (daysOfWeek[insertNum]);//Выводим результат
 }
 
 else
 {
-    Console.WriteLine("Введенное число не соответствует дню  недели. Пожалуйста,выберите другое число от 1 до 7.");
+    Console.WriteLine("Введенное число не соответствует дню  недели. Пожалуйста,выберите другое число от 1 до 7.");//если число меньше одного и больше 7 выводим в консоль сообщение об ошибке
 }

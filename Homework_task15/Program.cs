@@ -1,8 +1,8 @@
-﻿int insertNum = int.Parse(Console.ReadLine()??"0");
-if ((insertNum>0)&&(insertNum<8))
+﻿int insertNum = int.Parse(Console.ReadLine()??"0"); //Парсим введенное число
+if ((insertNum>0)&&(insertNum<8)) // проверяем число на соответствие дню недели
 {
-    if (insertNum>5)
-    Console.WriteLine("Выходной");
+    if (insertNum>5) 
+    Console.WriteLine("Выходной"); //Если введенное число меньше 5 -выводим в консоль результат рабочий. Если больше-выходной
     else
     {
         Console.WriteLine("Рабочий");

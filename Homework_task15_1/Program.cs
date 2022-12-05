@@ -1,12 +1,12 @@
-﻿int insertNum = int.Parse(Console.ReadLine()??"0");
-string [] daysOfWeek = new string [7];
-daysOfWeek[0]=  "Рабочий"; daysOfWeek[1]="Рабочий"; daysOfWeek[2]= "Рабочий";
-daysOfWeek[3]=  "Рабочий"; daysOfWeek[4]= "Рабочий"; daysOfWeek[5]= "Выходной"; daysOfWeek[6] = "Выходной";
-if ((insertNum>0)&&(insertNum<8))
+﻿int insertNum = int.Parse(Console.ReadLine()??"0");//Парсим введенное число
+string [] daysOfWeek = new string [7];//Определяем длину массива
+daysOfWeek[0]=  "Понедельник - рабочий"; daysOfWeek[1]="Вторник - рабочий"; daysOfWeek[2]= "Среда - рабочий";
+daysOfWeek[3]=  "Четверг - рабочий"; daysOfWeek[4]= "Пятница - рабочий"; daysOfWeek[5]= "Суббота - выходной"; daysOfWeek[6] = "Воскресенье - выходной";//Определяем значения для каждого индекса массива
+if ((insertNum>0)&&(insertNum<8)) // Проводим проверку на соответствие введенного числа дню недели
 {
-Console.WriteLine(daysOfWeek[insertNum - 1]);
+Console.WriteLine(daysOfWeek[insertNum - 1]);//Выводим в консоль значение
 }
 else
 {
-    Console.WriteLine("Введенное число не соответствует дню  недели. Пожалуйста,выберите другое число от 1 до 7.");
+    Console.WriteLine("Введенное число не соответствует дню  недели. Пожалуйста,выберите другое число от 1 до 7.");//если число меньше одного и больше 7 выводим в консоль сообщение об ошибке
 }
