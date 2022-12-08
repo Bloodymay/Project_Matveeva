@@ -11,9 +11,9 @@ bool result = false;
 result = (insertNum/10000 == insertNum%10)&&((insertNum/1000)%10)==((insertNum/10)%10);
 return result;
 }
-void PrintData( string message, bool result)
+void PrintData( string message)
 {
-    Console.WriteLine(message + result);
+    Console.WriteLine(message);
 }
 
 
@@ -22,15 +22,16 @@ int insertNum = ReadData("Введите пятизначное число");
 if ((insertNum>9999)&&(insertNum<100000))
 
 {
-    if 
+    bool result = Palindrome(insertNum);
+    if (result==true)
     {
-        bool result = Palindrome(insertNum);
-        PrintData("Число является палиндромом", result);
+        
+        PrintData(insertNum + " - Число является палиндромом");
     }
     
     else
     {
-         PrintData("Число не является палиндромом", result);
+         PrintData(insertNum + " - Число не является палиндромом");
     }     
 
 
