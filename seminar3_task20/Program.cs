@@ -4,6 +4,7 @@ int x1 = ReadData("Введите координату X1");
 int x2 = ReadData("Введите координату X2");
 int y1 = ReadData("Введите координату Y1");
 int y2 = ReadData("Введите координату Y2");
+
 int ReadData(string msg)
 {
     Console.WriteLine(msg);

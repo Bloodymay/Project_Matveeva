@@ -1,8 +1,10 @@
-﻿void PrintData( string msg, string res)
-{
-    Console.WriteLine(msg + res);
-}
+﻿// Метод сбора данных
 
+int ReadData(string msg)
+{
+    Console.Write(msg);
+    return int.Parse(Console.ReadLine() ?? "0");
+}
 // Метод сборки строки
 
 string LineBuilder(int n, int pow)
@@ -16,12 +18,10 @@ string LineBuilder(int n, int pow)
     return line;
 }
 
-// Метод читает данные от пользователя
-
-int ReadData(string msg)
+//Метод вывода данных
+void PrintData( string msg, string res)
 {
-    Console.Write(msg);
-    return int.Parse(Console.ReadLine() ?? "0");
+    Console.WriteLine(msg + res);
 }
 
 
