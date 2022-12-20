@@ -6,6 +6,7 @@
     //Возвращаем значение
     return insertNum;
 }
+
 // метод вывода результата
 void PrintResult (string line)
 {
