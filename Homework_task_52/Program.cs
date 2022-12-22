@@ -68,16 +68,13 @@ void Print1DArr(double[] array)//Печатаем массив
     }
     Console.WriteLine(array[array.Length - 1] + "]");
 }
-void PrintData(string msg, int meaning)
-{
-    Console.WriteLine(msg+meaning);
-    
-}
+
 
 int row = ReadData("Введите количество строк ");
 int column = ReadData("Введите количество столбцов ");
 int[,] arr2D = Fill2DArray(row, column,1,16);
 Print2DArrayColor(arr2D);
 double [] avg = Average (arr2D);
+Console.WriteLine();
 Print1DArr(avg);
 
